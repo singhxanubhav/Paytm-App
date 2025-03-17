@@ -1,11 +1,12 @@
 import express from "express";
 import mainRouter from "./routes/index.js";
 import cors from "cors";
+import { connectDb } from "./models/index.js";
 
 const app = express();
 
 app.use(cors({
-    origin: "https://paytm-app1.vercel.app/",
+    origin: "http://localhost:5173/",
     methods: ['POST', 'GET', 'DELETE', 'PUT', 'OPTIONS'],
     credentials: true
 }));
@@ -20,6 +21,7 @@ app.get('/', (req, res) => {
 
 const PORT = 3000;
 app.listen(PORT, () => {
+    connectDb();
     console.log(`Server is running on http://localhost:${PORT}`);
 });
 

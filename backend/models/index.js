@@ -4,9 +4,14 @@ import dotenv from "dotenv";
 dotenv.config();
 
 
-const DB_URL = process.env.DB_CONNECTION_STRING;
-
-mongoose.connect(DB_URL)
+export const connectDb = async () => {
+    try {
+      await mongoose.connect(process.env.DB_CONNECTION_STRING);
+      console.log(`MongoDB connect Successfully `);
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
 const userSchema = new mongoose.Schema({
     username: {
