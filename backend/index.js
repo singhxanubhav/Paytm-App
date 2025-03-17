@@ -5,7 +5,7 @@ import cors from "cors";
 const app = express();
 
 app.use(cors({
-    origin: "my code",
+    origin: "https://paytm-app1.vercel.app/",
     methods: ['POST', 'GET', 'DELETE', 'PUT', 'OPTIONS'],
     credentials: true
 }));
