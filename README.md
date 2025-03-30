@@ -36,24 +36,24 @@ git clone https://github.com/singhxanubhav/Paytm-App.git
 ```
 cd backend
 ```
-2. Rename the of `.env.sample` file to `.env` and fill the necessary fields
-3. Install Dependencies 
+3. Rename the of `.env.sample` file to `.env` and fill the necessary fields
+4. Install Dependencies 
 ```
 npm install
 ```
-4. Run the Server
+5. Run the Server
 ```
 npm run start
 ```
-5. Go to App Directory
+6. Go to App Directory
 ```
 cd..
 ```
 ```
 cd frontend
 ```
-6. Rename the of `.env.sample` file to `.env.local` and fill the necessary fields
-7. Install Dependencies 
+7. Rename the of `.env.sample` file to `.env.local` and fill the necessary fields
+8. Install Dependencies 
 ```
 npm install
 ```
