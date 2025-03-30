@@ -20,21 +20,21 @@ A secure and efficient payments application built with the MERN stack.
 - **State Management**: Managed using Recoil.
 - **UI Components**: Styled using Daisy UI Premade Components.
 
-## Technologies Used
+## TechStack Used
 - **Frontend**: React, Recoil, Daisy UI
 - **Backend**: Node.js, Express.js, MongoDB, Mongoose, Zod, JWT
 - **Database**: MongoDB
 - **Authentication**: JWT
-- **Validation**: Zod
+- **Input Validation**: Zod
 
 ## Installation & Setup
 1. Clone the repository.
 ```
-git clone https://github.com/ronit-ghosh/Payments-App.git
+git clone https://github.com/singhxanubhav/Paytm-App.git
 ```
-2. Go to Server Directory
+2. Go to backend Directory
 ```
-cd server
+cd backend
 ```
 2. Rename the of `.env.sample` file to `.env` and fill the necessary fields
 3. Install Dependencies 
@@ -43,21 +43,21 @@ npm install
 ```
 4. Run the Server
 ```
-node index.js
+npm run start
 ```
 5. Go to App Directory
 ```
 cd..
 ```
 ```
-cd app
+cd frontend
 ```
 6. Rename the of `.env.sample` file to `.env.local` and fill the necessary fields
 7. Install Dependencies 
 ```
 npm install
 ```
-9. Run the App
+9. Run the frontend
 ```
 npm run dev
 ```
