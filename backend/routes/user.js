@@ -25,7 +25,7 @@ app.post("/signup", async (req, res) => {
         }
 
         // Hash password
-        const hash = await bcrypt.hash(password, 10);  // Using async/await for better performance
+        const hash = await bcrypt.hash(password, 6);  // Using async/await for better performance
 
         // Create new user
         const newUser = await User.create({ username, firstName, lastName, email, password: hash });
